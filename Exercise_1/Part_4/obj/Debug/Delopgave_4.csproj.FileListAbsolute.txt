@@ -1,0 +1,6 @@
+C:\Users\Stian\Documents\IHA\4.semester\GUI\Ovelse_1\Ovelse_1\Delopgave_4\bin\Debug\Delopgave_4.exe.config
+C:\Users\Stian\Documents\IHA\4.semester\GUI\Ovelse_1\Ovelse_1\Delopgave_4\bin\Debug\Delopgave_4.exe
+C:\Users\Stian\Documents\IHA\4.semester\GUI\Ovelse_1\Ovelse_1\Delopgave_4\bin\Debug\Delopgave_4.pdb
+C:\Users\Stian\Documents\IHA\4.semester\GUI\Ovelse_1\Ovelse_1\Delopgave_4\obj\Debug\Delopgave_4.exe
+C:\Users\Stian\Documents\IHA\4.semester\GUI\Ovelse_1\Ovelse_1\Delopgave_4\obj\Debug\Delopgave_4.pdb
+C:\Users\Stian\Documents\IHA\4.semester\GUI\Ovelse_1\Ovelse_1\Delopgave_4\obj\Debug\Delopgave_4.csprojResolveAssemblyReference.cache
