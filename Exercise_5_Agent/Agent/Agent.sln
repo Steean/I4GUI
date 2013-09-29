@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part_1", "Agent\Part_1.csproj", "{8093D4DD-02B0-4591-A82A-2E43683EE92D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part_1", "Part_1\Part_1.csproj", "{8093D4DD-02B0-4591-A82A-2E43683EE92D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part_2", "Part_2\Part_2.csproj", "{CFB243E6-3E06-4389-80D0-1DDF533F1B59}"
 EndProject
@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part_3", "Part_3\Part_3.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part_4", "Part_4\Part_4.csproj", "{4F6883CE-20AC-4546-B2EF-B87DCA15DC82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part_5", "..\..\..\..\..\GitHub\I4GUI\Exercise_5_Agent\Agent\Part_5\Part_5.csproj", "{B58AE5F7-5D56-45BE-8143-5AD78CA62494}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part_5", "Part_5\Part_5.csproj", "{B58AE5F7-5D56-45BE-8143-5AD78CA62494}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
