@@ -1,6 +1,0 @@
-C:\Users\Stian\Documents\IHA\4.semester\GUI\Exercise_1\Exercise_1\Part_3\bin\Debug\Part_4.exe.config
-C:\Users\Stian\Documents\IHA\4.semester\GUI\Exercise_1\Exercise_1\Part_3\bin\Debug\Part_4.exe
-C:\Users\Stian\Documents\IHA\4.semester\GUI\Exercise_1\Exercise_1\Part_3\bin\Debug\Part_4.pdb
-C:\Users\Stian\Documents\IHA\4.semester\GUI\Exercise_1\Exercise_1\Part_3\obj\Debug\Part_3.csprojResolveAssemblyReference.cache
-C:\Users\Stian\Documents\IHA\4.semester\GUI\Exercise_1\Exercise_1\Part_3\obj\Debug\Part_4.exe
-C:\Users\Stian\Documents\IHA\4.semester\GUI\Exercise_1\Exercise_1\Part_3\obj\Debug\Part_4.pdb
