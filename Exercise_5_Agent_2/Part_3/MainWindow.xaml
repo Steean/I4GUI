@@ -45,10 +45,10 @@
             </MenuItem>
         </Menu>
         <ToolBar Grid.Row="1" Grid.ColumnSpan="3">
-            <Button Content="&lt;"   Command="{Binding PreviousCommand}"/>
-            <Button Content="&gt;"   Command="{Binding NextCommand}"/>
-            <Button Content="+"    Command="{Binding AddCommand}"/>
-            <Button Content="-" Command="{Binding RemoveCommand}"/>
+            <Button Content="{DynamicResource lastIcon}"   Command="{Binding PreviousCommand}"/>
+            <Button Content="{DynamicResource nextIcon}"   Command="{Binding NextCommand}"/>
+            <Button Content="{DynamicResource addIcon}"    Command="{Binding AddCommand}"/>
+            <Button Content="{DynamicResource removeIcon}" Command="{Binding RemoveCommand}"/>
         </ToolBar>
         <ListBox Name="LbxAgents" Margin="5" Grid.Column="2" Grid.Row="2" Grid.RowSpan="5" 
                   DisplayMemberPath="CodeName" 
