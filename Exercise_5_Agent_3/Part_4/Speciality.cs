@@ -12,7 +12,8 @@ namespace Part_4
         public AgentSpeciality()
         {
             Add("Assasination");
-            Add("KUNGFU!");
+            Add("Martini");
+            Add("Dying");
         }
     }
 }
