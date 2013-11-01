@@ -74,8 +74,8 @@ namespace SyncCalcPi
 
                     // Show progress
                     //ShowProgress(pi.ToString(), digits, i + digitCount);
-                    double progress = ((i + digitCount)/digits)*100;
-                    //bw.ReportProgress((int)progress, pi);
+                    double progress = ((double)(i + digitCount)/digits)*100;
+                    bw.ReportProgress((int)progress, pi);
 
                 }
             }
