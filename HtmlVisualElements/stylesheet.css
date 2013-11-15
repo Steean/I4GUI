@@ -1,0 +1,46 @@
+body {
+    font-family: Verdana, Arial, sans-serif;
+	background-image: url('images/background.gif');
+    width: 800px;
+    padding: 20px;
+    margin: 0 auto;    
+}
+
+nav {
+    background-color: #ffffcc;
+    text-align: center;
+    padding-bottom: 28px;    
+}
+
+header {
+    text-align: center;
+    background-color: #ccaa66;
+}
+
+.content {
+    padding: 20px;
+    background-color: #ffffcc;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.6em;
+    font-style: italic;
+    background-color: #ccaa66;
+    padding: 5px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+h3 {
+    background-color: #ccaa66;
+    padding: 5px;
+}
+
+.music {
+    margin: 0 auto;
+    width: 50%;
+}
+
