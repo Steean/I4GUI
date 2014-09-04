@@ -1,0 +1,75 @@
+﻿<Window x:Class="ToDo.TodoDetailedWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:ToDo"
+        Title="TodoDetailedWindow" Height="300" Width="300"
+        WindowStartupLocation="CenterOwner"
+        FocusManager.FocusedElement="{Binding ElementName=AddTitleBox}"
+        ShowInTaskbar="False" ResizeMode="NoResize" WindowStyle="ToolWindow">
+    
+    <Window.Resources>
+        <local:Priorities x:Key="priorities"/>
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="85"/>
+            <ColumnDefinition Width="140*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="auto">Title</Label>
+        <Label Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="auto">Description</Label>
+        <Label Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="auto">Priority</Label>
+        <Label Grid.Column="0" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="auto">Due date</Label>
+        <Label Grid.Column="0" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="auto">Created</Label>
+        <Label Grid.Column="0" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="auto">Completed</Label>
+
+        <TextBox TabIndex="0" Margin="5" Grid.Column="1" Grid.Row="0" 
+                 Name="AddTitleBox" 
+                 Text="{Binding Path=Title}">            
+        </TextBox>
+
+        <TextBox TabIndex="1" Margin="5" Grid.Column="1" Grid.Row="1" 
+                 Name="AddDescriptionBox" 
+                 Text="{Binding Path=Description}"
+                 TextWrapping="Wrap"
+                 AcceptsReturn="True"
+                 VerticalScrollBarVisibility="Auto"
+                 MaxLines="5"
+                 >
+        </TextBox>
+        
+        <ComboBox TabIndex="2" Margin="5" Grid.Column="1" Grid.Row="2" 
+                  ItemsSource="{Binding Source={StaticResource priorities}}" 
+                  SelectedItem="{Binding Path=Priority}">            
+        </ComboBox>
+        
+        <TextBox TabIndex="3" Margin="5" Grid.Column="1" Grid.Row="3"                  
+                 Name="AddDueDateBox"
+                 Text="{Binding Path=DueDate, StringFormat=d}">                                
+        </TextBox>
+                       
+        <TextBlock Margin="5" Grid.Column="1" Grid.Row="4"
+                   Text="{Binding Path=CreationDate, StringFormat=d}">            
+        </TextBlock>
+
+        <TextBlock Margin="5" Grid.Column="1" Grid.Row="5"
+                   Text="{Binding Path=CompletionDate}">
+        </TextBlock>
+
+        <DockPanel Grid.Column="1" Grid.Row="6">
+            <Button TabIndex="5" IsDefault="True" Name="BtnOk" Margin="5" Width="75" HorizontalAlignment="Left" Click="BtnOk_OnClick">Ok</Button>
+            <Button TabIndex="6" IsCancel="True"  Margin="5" Width="75" HorizontalAlignment="Left">Cancel</Button>
+        </DockPanel>
+    </Grid>
+</Window>

@@ -72,7 +72,7 @@
 
         <Grid x:Name="mainGrid" Background="{StaticResource salmonBrush}">
             <Grid.Resources>
-                <local:ClrConverter x:Key="blueFont007" />
+                <!--<local:ClrConverter x:Key="blueFont007" />-->
             </Grid.Resources>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition MaxWidth="85"/>
