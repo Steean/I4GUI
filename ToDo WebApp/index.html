@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>The Todo List</title>
+
+    <link href="css/stylesheet.css" rel="stylesheet" />
+
+</head>
+<body ng-controller="TodoController">
+<div class="main">
+    <div class="left">
+        <h2 class="center">Add task</h2>
+        <div class="Add">
+            <div class="row">
+                <label>Title:</label>
+                <input type="text" ng-model="TaskTitle"><br>
+            </div>
+            <div class="row">
+                <label>Description:</label>
+                <input type="text" ng-model="TaskDescription"><br>
+            </div>
+            <div class="row">
+                <label>Priority:</label>
+                <select ng-model="TaskPriority">
+                    <option value="Low">Low</option>
+                    <option value="Normal">Normal</option>
+                    <option value="High">High</option>
+                </select><br>
+            </div>
+            <div class="row">
+                <label>Due date:</label>
+                <input type="date" ng-model="TaskDueDate"><br>
+            </div>
+            <div class="row">
+                <input class="Buttons" type="submit" value="Add" ng-click="addTask()"/>
+            </div>
+        </div>
+
+        <h2 class="center">Edit Task</h2>
+        <div class="Selected">
+            <div class="row">
+                <label>Title:</label>
+                <input type="text" ng-model="SelectedTaskTitle"><br>
+            </div>
+            <div class="row">
+                <label>Description:</label>
+                <input type="text" ng-model="SelectedTaskDescription" value="{{current.description}}"><br>
+            </div>
+            <div class="row">
+                <label>Priority:</label>
+                <select ng-model="SelectedTaskPriority">
+                    <option value="Low">Low</option>
+                    <option value="Normal">Normal</option>
+                    <option value="High">High</option>
+                </select><br>
+            </div>
+            <div class="row">
+                <label>Due date:</label>
+                <input type="date" ng-model="SelectedTaskDueDate"><br>
+            </div>
+            <div class="row">
+                <input class="Buttons" type="submit" value="Update" ng-click="updateTask()"/>
+                <input type="submit" value="Delete" ng-click="deleteTask()"/>
+            </div>
+        </div>
+
+    </div>
+    <div class="right">
+        <div class="Tasks">
+            <h2 class="center">Tasks</h2>
+            <ul class="noBullets">
+                <li ng-repeat="todo in todos" ng-click="currentTask(todo)">
+                    <input type="checkbox" ng-model="todo.done">
+                    <span class="done-{{todo.done}}">{{todo.dueDate}} {{todo.title}} ({{todo.priority}}) - {{todo.description}}</span>
+                </li>
+            </ul>
+            <div class="center">
+                <input id="all" type="submit" value="All" ng-click="allTasks()">
+                <input id="todo" type="submit" value="Todo" ng-click="todoTasks()">
+                <input id="today" type="submit" value="Todo today" ng-click="todayTasks()">
+                <input id="completed" type="submit" value="Completed" ng-click="completedTasks()">
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="js/jquery-2.0.3.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/TodoController.js"></script>
+
+</body>
+</html>
